@@ -1,15 +1,17 @@
 calibration_sum = 0
 
-find_digit(line):
+def find_digit(line):
+  return 0
 
-find_first(line):
+def find_first(line):
+  return 0
 
-find_last(line):
+def find_last(line):
+  return 0
 
-with open('calibration_data', 'r') as f:
+with open('trebuchet_calibration.txt', 'r') as f:
   for line in f:
     first_digit = find_first(line)
     second_digit = find_last(line)
-    calibration_sum += int(str(first_digit) + str(second_digit)
+    calibration_sum += int(str(first_digit) + str(second_digit))
 print(f'The sum of all calibration values is {calibration_sum}.')
-    
